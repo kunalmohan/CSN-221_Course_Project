@@ -118,6 +118,53 @@ url=false,
 \vspace{\baselineskip}
 
 \vspace{\baselineskip}
+{\fontsize{24pt}{28.8pt}\selectfont \textbf{\textcolor[HTML]{0C343D}{\uline{So how is it exactly different from Set Associative Cache ?}}}\par}\par
+
+
+\vspace{\baselineskip}
+{\fontsize{14pt}{16.8pt}\selectfont A Set Associative Cache and a Skewed Associative cache are both multi bank cache. A multi bank cache is one which has more than one block allocated for a given memory address. If a particular address of main memory can be allocated to N blocks in the cache, then the cache is said to have N banks. That memory address can then go to any of these N banks depending upon the replacement policy used in putting the new memory address.\par}\par
+
+
+\vspace{\baselineskip}
+{\fontsize{14pt}{16.8pt}\selectfont The way in which Skewed and Set associative cache differ from each other is in the way of allocation of block in these different banks. The set associative cache uses the same function to allocate block in different banks. A case for 2-way set associative cache (having 2 different banks) can be illustrated from the following figure.\par}\par
+
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=6.5in,height=3.97in]{./media/image1.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+{\fontsize{14pt}{16.8pt}\selectfont Here the same function (say f) is used to map a given memory address to a block in different banks. The block chosen finally depends upon the replacement policy used.\par}\par
+
+
+\vspace{\baselineskip}
+{\fontsize{14pt}{16.8pt}\selectfont On the other hand, a N-way Skewed Associative cache also has N banks, but the block assignment in these banks is done by different functions (say f1 and f2). \par}\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
 
 \printbibliography
 \end{document}
