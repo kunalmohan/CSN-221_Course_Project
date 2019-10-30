@@ -1,0 +1,15 @@
+CFLAGS = -O
+
+all:  CACHESKEW  CACHESKEWL2
+	./CACHESKEW 2 1024 4 abc.txt < sim.txt
+
+CACHESKEW :  main.c cacheGeneric.h output.c initializeCache.c Simulate.c MappingFunction1.c MappingFunction2.c MappingFunction3.c LRUStrategy.c 
+	gcc $(CFLAGS) -o  $@ main.c output.c initializeCache.c Simulate.c MappingFunction1.c MappingFunction2.c MappingFunction3.c LRUStrategy.c 
+
+
+CACHESKEWL2 : main.c cacheGeneric.h output.c initializeCache.c Simulate.c MappingFunction1.c MappingFunction2.c MappingFunction3.c LRUStrategy.c 
+	gcc -DSIML2 $(CFLAGS) -o  $@ main.c output.c initializeCache.c Simulate.c MappingFunction1.c MappingFunction2.c MappingFunction3.c LRUStrategy.c 
+
+#CACHESKEWL2 assumes a L2 cache with inclusion property
+# for the moment L1 cannot be configured
+
