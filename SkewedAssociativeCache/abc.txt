@@ -22,3 +22,27 @@ strategy	NbBank	nbinst	dataMiss	instMiss	100*nbMiss/nbinst
 
 SkewLRU   	2	4	2		2		100.000000	
 
+#instructions : 4  || #data : 12 
+	nbinst: number of instructions
+	dataMiss: number of miss of the data cache
+	instMiss:number of miss of the instruction cache
+
+
+
+# 1024 
+strategy	NbBank	nbinst	dataMiss	instMiss	100*nbMiss/nbinst	
+
+SkewLRU   	2	4	2		2		100.000000	
+
+
+# 2048 
+strategy	NbBank	nbinst	dataMiss	instMiss	100*nbMiss/nbinst	
+
+SkewLRU   	2	4	2		2		100.000000	
+
+
+# 4096 
+strategy	NbBank	nbinst	dataMiss	instMiss	100*nbMiss/nbinst	
+
+SkewLRU   	2	4	2		2		100.000000	
+
