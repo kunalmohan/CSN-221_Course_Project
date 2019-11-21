@@ -1,0 +1,16 @@
+Main memory size = 64 KB
+L1 cache size = 1 KB
+Victim cache size = 512 Bytes
+Block size = 8 Bytes
+
+Number of write miss in L1 cache = 915
+Number of write miss in Victim cache = 737
+Number of write hit in L1 cache = 327
+Number of write hit in Victim cache = 180
+Number of read miss in L1 cache = 942
+Number of read miss in Victim cache = 681
+Number of read hit in L1 cache = 156
+Number of read hit in Victim cache = 323
+
+Miss Ratio = 0.578632
+Hit Ratio = 0.421368
